@@ -26,9 +26,9 @@ It took a bit of laborating to find the best cap for the dB, so that just enough
 into the picture, but to leave the distortion out.
 
 To decode the melospectrogram, my first approach was to use Machine Learning, first with Conv2D- and 
-later with LSTM-technique. But since I didn't had enough data to train the model, this attempt failed big time. Even
-though it would've been cool to use Machine Learning, my second approach - analyze column for column with
-pixels - turned out to be way more fruitful. The more columns that are filled with white pixels (sound) in 
-a row, the longer the beep. And the opposite - the more columns that are filled with black pixels (pause) in 
-a row, the longer the pause. And after that there is only to calculate the columns of sound vs pause, compare them
-to each other, and that will give us a morse code.
+later with LSTM-technique. But since I didn't had enough data to train the model, this attempt failed big time. 
+So after two intense days of learning a lot about ML, even though it would've been cool to use Machine Learning, my 
+second approach - analyze column for column with pixels - turned out to be way more fruitful. The more columns 
+that are filled with white pixels (sound) in a row, the longer the beep. And the opposite - the more columns that 
+are filled with black pixels (pause) in a row, the longer the pause. And after that there is only to calculate the 
+columns of sound vs pause, compare them to each other, and that will give us a morse code.
