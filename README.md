@@ -1,6 +1,10 @@
 This is a two-way Morse Decoder. 
 You can type in a sentence or a word of your choice and have it to played up in Morse Code. 
-You can also choose to decode a morse signal and have it translated into pure text.
+You can also choose to decode a morse signal and have it translated into pure text. In so case,
+if the signal is bad, try disable the audio enhancements in windows, see link for guidance:
+https://support.microsoft.com/en-us/topic/disable-audio-enhancements-0ec686c4-8d79-4588-b7e7-9287dd296f72
+
+
 The first part (text --> morse) was pretty easy to code.
 
 
@@ -32,3 +36,5 @@ second approach - analyze column for column with pixels - turned out to be way m
 that are filled with white pixels (sound) in a row, the longer the beep. And the opposite - the more columns that 
 are filled with black pixels (pause) in a row, the longer the pause. And after that there is only to calculate the 
 columns of sound vs pause, compare them to each other, and that will give us a morse code.
+
+© 2025 Ivar Högblom. This application and its content are protected by copyright.
